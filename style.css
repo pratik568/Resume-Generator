@@ -1,0 +1,41 @@
+/* hiding cv form */
+
+/* #cv-form{
+    display: none;
+} */
+/* ---------------------------- */
+
+/* hiding cv template */
+
+#cv-template{
+    display: none;
+}
+
+/* hiding print botton */
+
+#printcv{
+    display: none;
+}
+
+
+
+
+.myimg{
+    /* border: solid blue 1px; */
+    border-radius: 50%;
+    width: 200px;
+    
+}
+
+.background{
+    background-color: cornflowerblue;
+
+}
+
+.bcl{
+    background-image: url("https://i.pinimg.com/originals/48/07/6c/48076cc56b8ddd63ed9db2bc1e2c4d64.jpg");
+}
+.pratik{
+    background-image: url("https://img.freepik.com/premium-vector/abstract-smooth-pastel-gradient-color-effect-background-website-poster-graphic-design_120819-733.jpg?w=2000");
+}
+
