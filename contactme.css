@@ -61,6 +61,8 @@ width: 100%;
 
 
 .contactinfo{
+    display: flex;
+    justify-content: space-evenly;
     padding: 60px 0px;
     background-color: #191919;
     margin-left: 15%;
@@ -82,8 +84,10 @@ width: 100%;
     background-color: #191919;
 } */
 
+
+
 .text{
-    color: white;
+    color: #fcfc;
     margin: 1.5rem 0 2rem 0;
 }
 .information{
@@ -95,3 +99,32 @@ width: 100%;
 .information p{
     color: white;
 }
+.social-media p{
+    color: #f9004d;
+    position: relative;
+    margin-top: 96px ;
+    margin-bottom: 20px;
+
+}
+.title{
+    color: #f9004d;
+}
+
+
+.undrew img{
+    width: 400px;
+    height: auto;
+    border-radius:20% 0 20% 0;
+    margin-top: 20px;
+    margin-left: 40px;
+    /* border: 2px solid  #f9004d; */
+}
+.sicon{
+    margin-right: 0.5rem;
+    text-align: center;
+    
+}
+/* .social-icon{
+    display: flex;
+    justify-content: space-between;
+} */
