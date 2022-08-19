@@ -9,7 +9,7 @@ function addNewWEField(){
     newNode.classList.add("form-control")
     newNode.classList.add("weField")
     newNode.classList.add("mt-2")
-    newNode.setAttribute("rows",3)
+    newNode.setAttribute("rows",2)
     newNode.setAttribute("placeholder","Enter here")
 
 
@@ -37,7 +37,7 @@ function addNewAQFiled(){
     newNode.classList.add("form-control")
     newNode.classList.add("aqField")
     newNode.classList.add("mt-2")
-    newNode.setAttribute("rows",3)
+    newNode.setAttribute("rows",2)
     newNode.setAttribute("placeholder","Enter here")
 
 
@@ -53,7 +53,7 @@ function addNewSKILLFiled(){
     newNode.classList.add("form-control")
     newNode.classList.add("skillField")
     newNode.classList.add("mt-2")
-    newNode.setAttribute("rows",3)
+    newNode.setAttribute("rows",2)
     newNode.setAttribute("placeholder","Enter here")
 
 
@@ -103,7 +103,7 @@ function generateCV(){
     document.getElementById("addressT").innerHTML="Address:"+document.getElementById("addressField").value
 
 
-    document.getElementById("fbT").innerHTML=document.getElementById("fbField").value
+    document.getElementById("gitT").innerHTML=document.getElementById("gitField").value
     document.getElementById("instaT").innerHTML=document.getElementById("instaField").value
     document.getElementById("linkedT").innerHTML=document.getElementById("linkedField").value
 
@@ -150,12 +150,23 @@ function generateCV(){
 
 
 
+    //now we are going for strength
+
+    document.getElementById("strengthT").innerHTML=document.getElementById("strengthField").value
+
+    //now we are going for weakness
+    document.getElementById("weaknessT").innerHTML=document.getElementById("weaknessField").value
+
+
+
     // ----------------------------------------------------------------------------
 
 
     document.getElementById("cv-form").style.display="none"
+    document.getElementById("generate").style.display="none"
     document.getElementById("cv-template").style.display="block"
     document.getElementById("print").style.display="block"
+
 
 
 }
@@ -164,6 +175,10 @@ function generateCV(){
 //printing cv
 
 function printCV(){
+    document.getElementById("head").style.display="none"
+    document.getElementById("print").style.display="none"
     window.print()
+    document.getElementById("print").style.display="block"
+    document.getElementById("head").style.display="block"
 }
 

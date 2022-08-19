@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans', sans-serif;
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 40px;
+position: relative;
+
+}
+.navbar ul li a{
+text-decoration: none;
+color: thistle;
+text-transform: uppercase;
+}
+.navbar ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #f9004d;
+position: absolute;
+left: 0;
+bottom: -4px;
+transition: 0.5s;
+}
+.navbar ul li:hover::after{
+width: 100%;
+
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdW1lfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.icon{
+    width: 25px;
+    margin-right: 0.7rem;
+}
+
+
+
+
+
+.contactinfo{
+    padding: 60px 0px;
+    background-color: #191919;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom:auto;
+    border-radius: 20px;
+    padding: 2.3rem 2.3rem;
+    position: relative;
+    
+}
+
+
+
+
+/* .contactinfo{
+    padding: 2.3rem 2.3rem;
+    position: relative;
+    background-color: #191919;
+} */
+
+.text{
+    color: white;
+    margin: 1.5rem 0 2rem 0;
+}
+.information{
+    display: flex;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+.information p{
+    color: white;
+}
